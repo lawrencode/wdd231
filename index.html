@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lawren Talamaivao's WDD 231 course home page featuring responsive design, course information, and project navigation."
+    />
+    <meta name="author" content="Lawren Talamaivao" />
+    <title>WDD 231 | Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand" aria-label="Lawren Talamaivao brand">
+        <img src="images/logo.svg" alt="Lawren Talamaivao logo" class="brand-logo" />
+        <span class="brand-name">Lawren Talamaivao</span>
+      </div>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="primary-nav" class="main-nav" aria-label="Main navigation">
+        <a href="#home" class="active">Home</a>
+        <a href="#chamber">Chamber</a>
+        <a href="#final">Final</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <h1>Home</h1>
+
+      <section class="card intro" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Me</h2>
+        <div class="card-layout">
+          <div class="text-content">
+            <p>
+              My name is Lawren Talamaivao, and I am studying web development with a strong interest in responsive design,
+              accessible interfaces, and practical problem solving. I enjoy learning how HTML, CSS, and JavaScript work
+              together to create useful digital experiences.
+            </p>
+            <p>
+              I value clean code, thoughtful structure, and good user experience. Through this course, I am building my
+              skills in front-end development and learning how to create polished, functional websites for real users.
+            </p>
+          </div>
+          <img src="images/profile.svg" alt="Stylized portrait of Lawren Talamaivao" />
+        </div>
+      </section>
+
+      <section class="card goals" aria-labelledby="goals-heading">
+        <h2 id="goals-heading">Course Goals</h2>
+        <ul class="goal-list">
+          <li>Strengthen my skills in HTML, CSS, and JavaScript.</li>
+          <li>Create accessible and responsive layouts for all screen sizes.</li>
+          <li>Learn how to structure user-friendly navigation and page content.</li>
+          <li>Build a professional portfolio of class projects and assignments.</li>
+        </ul>
+      </section>
+
+      <section id="final" class="card certificate" aria-labelledby="certificate-heading">
+        <h2 id="certificate-heading">Certificate Courses</h2>
+        <div class="filter-bar" role="group" aria-label="Course filter options">
+          <button class="filter-btn active" type="button" data-filter="all">All Courses</button>
+          <button class="filter-btn" type="button" data-filter="wdd">WDD Courses</button>
+          <button class="filter-btn" type="button" data-filter="cse">CSE Courses</button>
+        </div>
+        <div id="courseList" class="course-list" aria-live="polite"></div>
+        <p id="creditTotal" class="credit-total">Total credits: 0</p>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="chamber">
+      <div class="footer-social">
+        <a href="https://github.com/lawrencode" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+
+      <div class="footer-meta">
+        <p>© <span id="currentYear"></span> Lawren Talamaivao | Samoa</p>
+      </div>
+
+      <p id="lastModified" class="last-modified">Last modified: --</p>
+    </footer>
+  </body>
+</html>

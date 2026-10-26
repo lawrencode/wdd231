@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Lawren Talamaivao logo</title>
+  <desc id="logoDesc">A circular logo with a stylized L and warm gradient.</desc>
+  <defs>
+    <linearGradient id="grad" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5b04d"/>
+      <stop offset="100%" stop-color="#1d4d73"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="#12324d"/>
+  <circle cx="100" cy="100" r="72" fill="url(#grad)" opacity="0.9"/>
+  <path d="M62 42h24v62h42v24H62V42z" fill="#ffffff"/>
+</svg>

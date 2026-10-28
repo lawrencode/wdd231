@@ -282,6 +282,60 @@
   color: #4a203b;
 }
 
+.photos {
+  margin-top: 2rem;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  background: linear-gradient(180deg, #fff1f6, #ffe4ee);
+  border: 1px solid rgba(173, 92, 127, 0.12);
+  box-shadow: 0 20px 35px rgba(124, 56, 86, 0.08);
+  min-height: 220px;
+}
+
+.photo-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.photo-item:hover img {
+  transform: scale(1.06);
+}
+
+.photo-item figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.9rem 1rem;
+  background: linear-gradient(180deg, transparent, rgba(67, 25, 58, 0.72));
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.photo-item.tall {
+  grid-row: span 2;
+}
+
+.photo-item.wide {
+  grid-column: span 2;
+}
+
 .love-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -338,7 +392,8 @@
   .story-grid,
   .timeline,
   .love-list,
-  .future-cards {
+  .future-cards,
+  .photo-gallery {
     grid-template-columns: 1fr;
   }
 
@@ -354,5 +409,22 @@
   .hero {
     min-height: unset;
     padding-top: 1rem;
+  }
+
+  .photo-item.wide {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .photo-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-item,
+  .photo-item.wide,
+  .photo-item.tall {
+    grid-column: auto;
+    grid-row: auto;
   }
 }

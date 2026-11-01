@@ -52,10 +52,17 @@ const loadWeather = async () => {
           <p class="weather-label">Now in Nampa</p>
           <strong class="weather-temp">${formatTemperature(temp)}</strong>
         </div>
-        <img class="weather-icon" src="https://openweathermap.org/img/wn/${iconCode}@2x.png" alt="${description}" onerror="this.style.display='none'">
+        <img class="weather-icon" src="https://openweathermap.org/img/wn/${iconCode}@2x.png" alt="${description}">
       </div>
       <p class="weather-description">${description}</p>
     `;
+
+    const weatherIcon = weatherSummary.querySelector('.weather-icon');
+    if (weatherIcon) {
+      weatherIcon.onerror = () => {
+        weatherIcon.style.display = 'none';
+      };
+    }
 
     const dailyForecast = [];
     const datesSeen = new Set();

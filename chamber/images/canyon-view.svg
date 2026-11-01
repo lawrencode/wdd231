@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-labelledby="title desc">
+  <title id="title">Canyon View Dental logo</title>
+  <desc id="desc">A tooth and smile logo.</desc>
+  <rect width="300" height="180" rx="20" fill="#eef8f8"/>
+  <path d="M90 80 C90 58, 108 42, 134 42 C150 42, 166 50, 176 63 C191 53, 205 45, 222 45 C246 45, 266 60, 266 86 C266 118, 236 137, 202 148 C179 155, 165 146, 150 138 C135 146, 121 155, 98 148 C64 137, 34 118, 34 86 C34 60, 54 45, 78 45 C84 45, 90 47, 90 80 Z" fill="#143d59"/>
+  <path d="M108 94 C124 81, 134 82, 150 94 C166 82, 176 81, 192 94" fill="none" stroke="#f5d4a8" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="109" cy="91" r="8" fill="#d9773d"/>
+  <circle cx="191" cy="91" r="8" fill="#d9773d"/>
+  <text x="150" y="162" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#143d59">CVD</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-labelledby="title desc">
+  <title id="title">Trailhead Outfitters logo</title>
+  <desc id="desc">A mountain peak and backpack symbol.</desc>
+  <rect width="300" height="180" rx="20" fill="#f8f5ee"/>
+  <path d="M50 135 L110 72 L150 110 L195 52 L253 135 Z" fill="#143d59"/>
+  <path d="M92 131 V95 H211 V131" fill="#d9773d"/>
+  <path d="M98 94 L119 83 L130 94 L150 69 L170 94 L191 83 L211 94" fill="none" stroke="#f7d7b6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="150" y="162" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#143d59">THO</text>
+</svg>

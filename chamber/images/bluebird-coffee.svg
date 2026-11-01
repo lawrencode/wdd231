@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-labelledby="title desc">
+  <title id="title">Bluebird Coffee Co. logo</title>
+  <desc id="desc">A coffee cup and wing icon.</desc>
+  <rect width="300" height="180" rx="20" fill="#f7f4ef"/>
+  <circle cx="88" cy="92" r="42" fill="#143d59"/>
+  <path d="M96 69 C120 59, 145 76, 145 98 C145 115, 130 130, 110 130 C87 130, 75 112, 79 93 C82 81, 89 73, 96 69 Z" fill="#d9773d"/>
+  <path d="M144 70 C169 54, 202 60, 219 82 C233 100, 234 123, 216 139 C194 159, 151 155, 136 131 C123 110, 126 84, 144 70 Z" fill="#1f4d73"/>
+  <path d="M162 86 C184 72, 193 87, 192 102 C190 120, 177 136, 162 140" fill="none" stroke="#f3d39d" stroke-width="8" stroke-linecap="round"/>
+  <text x="150" y="162" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#143d59">BBC</text>
+</svg>

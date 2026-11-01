@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-labelledby="title desc">
+  <title id="title">North Valley Media logo</title>
+  <desc id="desc">Media play button and mountain shape.</desc>
+  <rect width="300" height="180" rx="20" fill="#f3f5fa"/>
+  <rect x="58" y="52" width="184" height="95" rx="20" fill="#143d59"/>
+  <path d="M100 80 L155 108 L100 136 Z" fill="#d9773d"/>
+  <path d="M180 82 L220 82 L220 134 L180 134" fill="none" stroke="#dfeaf7" stroke-width="8" stroke-linecap="round"/>
+  <path d="M185 58 L218 58 L245 82 L245 120 L218 120" fill="none" stroke="#a7bdd9" stroke-width="6" stroke-linecap="round"/>
+  <text x="150" y="162" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#143d59">NVM</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-labelledby="title desc">
+  <title id="title">Summit Financial Advisors logo</title>
+  <desc id="desc">A capital S and chart bars.</desc>
+  <rect width="300" height="180" rx="20" fill="#f5f9ff"/>
+  <path d="M70 110 L105 78 L122 92 L155 58 L171 74 L185 60 L225 103 L240 91 L260 110 L260 135 H70 Z" fill="#143d59"/>
+  <path d="M70 68 H130 C150 68 160 78 160 90 C160 103 150 112 130 112 H100 V136 H70 Z" fill="#d9773d"/>
+  <path d="M121 55 L138 73 L154 55" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="153" y="162" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#143d59">SFA</text>
+</svg>

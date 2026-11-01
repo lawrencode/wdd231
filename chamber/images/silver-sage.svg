@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-labelledby="title desc">
+  <title id="title">Silver Sage Realty logo</title>
+  <desc id="desc">A warm house icon with a silver accent.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#eef4ff"/>
+      <stop offset="100%" stop-color="#dfe7ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="180" rx="20" fill="url(#bg)"/>
+  <path d="M52 95 L150 38 L248 95 V135 H52 Z" fill="#143d59"/>
+  <path d="M85 132 V98 H214 V132" fill="#d7e1ec"/>
+  <path d="M110 132 V83 H190 V132" fill="#90a8bf"/>
+  <circle cx="150" cy="60" r="13" fill="#d9773d"/>
+  <text x="150" y="162" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#143d59">SSR</text>
+</svg>

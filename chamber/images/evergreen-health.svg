@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" role="img" aria-labelledby="title desc">
+  <title id="title">Evergreen Health Foods logo</title>
+  <desc id="desc">Leaf icon with vegetables.</desc>
+  <rect width="300" height="180" rx="20" fill="#edf7f0"/>
+  <path d="M150 38 C122 74 100 95 78 121 C99 136 125 147 150 147 C175 147 201 136 222 121 C200 95 178 74 150 38 Z" fill="#1b7a61"/>
+  <path d="M146 58 C131 90 108 104 80 132" fill="none" stroke="#bfe6cc" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="98" cy="110" r="11" fill="#d9773d"/>
+  <circle cx="125" cy="122" r="10" fill="#f0bf73"/>
+  <circle cx="164" cy="120" r="12" fill="#d9773d"/>
+  <text x="150" y="162" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#143d59">EHF</text>
+</svg>

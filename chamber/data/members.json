@@ -1,0 +1,74 @@
+{
+  "members": [
+    {
+      "name": "Silver Sage Realty",
+      "address": "215 Main Street, Nampa, ID 83651",
+      "phone": "(208) 555-2101",
+      "website": "https://www.silversagerealty.com",
+      "image": "silver-sage.svg",
+      "membershipLevel": 3,
+      "category": "Real Estate",
+      "tagline": "Helping neighbors discover the right place to call home."
+    },
+    {
+      "name": "Bluebird Coffee Co.",
+      "address": "148 12th Avenue, Nampa, ID 83687",
+      "phone": "(208) 555-1188",
+      "website": "https://www.bluebirdcoffee.com",
+      "image": "bluebird-coffee.svg",
+      "membershipLevel": 2,
+      "category": "Hospitality",
+      "tagline": "Locally roasted coffee and community gathering space."
+    },
+    {
+      "name": "Canyon View Dental",
+      "address": "89 Sunset Drive, Nampa, ID 83686",
+      "phone": "(208) 555-4444",
+      "website": "https://www.canyonviewdental.com",
+      "image": "canyon-view.svg",
+      "membershipLevel": 1,
+      "category": "Healthcare",
+      "tagline": "Confident smiles and compassionate family care."
+    },
+    {
+      "name": "Trailhead Outfitters",
+      "address": "440 River Road, Nampa, ID 83686",
+      "phone": "(208) 555-3820",
+      "website": "https://www.trailheadoutfitters.com",
+      "image": "trailhead.svg",
+      "membershipLevel": 2,
+      "category": "Retail",
+      "tagline": "Gear for outdoor adventures and local exploration."
+    },
+    {
+      "name": "Summit Financial Advisors",
+      "address": "712 Orchard Lane, Nampa, ID 83651",
+      "phone": "(208) 555-9191",
+      "website": "https://www.summitfinancialadvisors.com",
+      "image": "summit-financial.svg",
+      "membershipLevel": 3,
+      "category": "Finance",
+      "tagline": "Planning for business growth and long-term prosperity."
+    },
+    {
+      "name": "Evergreen Health Foods",
+      "address": "260 East Frontage Road, Nampa, ID 83687",
+      "phone": "(208) 555-7619",
+      "website": "https://www.evergreenhealthfoods.com",
+      "image": "evergreen-health.svg",
+      "membershipLevel": 1,
+      "category": "Groceries",
+      "tagline": "Fresh ingredients and wellness-first local living."
+    },
+    {
+      "name": "North Valley Media",
+      "address": "615 Market Avenue, Nampa, ID 83687",
+      "phone": "(208) 555-6429",
+      "website": "https://www.northvalleymedia.com",
+      "image": "north-valley.svg",
+      "membershipLevel": 2,
+      "category": "Marketing",
+      "tagline": "Helping brands connect with community audiences."
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore the Nampa Valley Chamber directory to connect with local businesses, community partners, and chamber members."
+    />
+    <meta name="author" content="Lawren Talamaivao" />
+    <meta property="og:title" content="Nampa Valley Chamber | Member Directory" />
+    <meta
+      property="og:description"
+      content="Explore the Nampa Valley Chamber directory to connect with local businesses, community partners, and chamber members."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://lawrencode.github.io/wdd231/chamber/images/social-preview.svg"
+    />
+    <meta property="og:url" content="https://lawrencode.github.io/wdd231/chamber/directory.html" />
+    <title>Nampa Valley Chamber | Directory</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <script src="scripts/directory.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand" aria-label="Nampa Valley Chamber branding">
+        <img src="images/favicon.svg" alt="Nampa Valley Chamber logo" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-name">Nampa Valley</span>
+          <small class="brand-subtitle">Chamber of Commerce</small>
+        </div>
+      </div>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="primary-nav" class="main-nav" aria-label="Main navigation">
+        <a href="#">Home</a>
+        <a href="#">Discover</a>
+        <a href="#" class="active">Directory</a>
+        <a href="#">Join</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-intro" aria-labelledby="directory-heading">
+        <div>
+          <p class="eyebrow">Member Directory</p>
+          <h1 id="directory-heading">Chamber Members</h1>
+        </div>
+
+        <div class="view-controls" aria-label="View controls for directory list">
+          <button class="view-btn active" type="button" data-view="grid" aria-pressed="true">
+            Grid View
+          </button>
+          <button class="view-btn" type="button" data-view="list" aria-pressed="false">
+            List View
+          </button>
+        </div>
+      </section>
+
+      <section class="directory-panel">
+        <div id="memberList" class="member-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-contact">
+        <div>
+          <h2>Nampa Valley Chamber</h2>
+          <p>315 Main Street, Nampa, ID 83651</p>
+          <p><a href="tel:2085550171">(208) 555-0171</a></p>
+          <p><a href="mailto:info@nampavalleychamber.org">info@nampavalleychamber.org</a></p>
+        </div>
+
+        <div>
+          <p><strong>WDD 231</strong></p>
+          <p>Lawren Talamaivao</p>
+          <p id="lastModified" class="last-modified">Last modified: --</p>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <p>© <span id="currentYear"></span> Nampa Valley Chamber</p>
+      </div>
+    </footer>
+  </body>
+</html>

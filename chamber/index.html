@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Discover the Nampa Valley Chamber of Commerce and connect with local businesses, events, and members."
+    >
+    <meta name="author" content="Lawren Talamaivao">
+    <meta property="og:title" content="Nampa Valley Chamber | Home">
+    <meta
+      property="og:description"
+      content="Explore the Nampa Valley Chamber home page for events, local weather, and member spotlights."
+    >
+    <meta property="og:type" content="website">
+    <meta
+      property="og:image"
+      content="https://lawrencode.github.io/wdd231/chamber/images/social-preview.svg"
+    >
+    <meta property="og:url" content="https://lawrencode.github.io/wdd231/chamber/index.html">
+    <title>Nampa Valley Chamber | Home</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/home.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">
+        <img src="images/favicon.svg" alt="Nampa Valley Chamber logo" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-name">Nampa Valley</span>
+          <small class="brand-subtitle">Chamber of Commerce</small>
+        </div>
+      </div>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="primary-nav" class="main-nav" aria-label="Main navigation">
+        <a href="index.html" class="active">Home</a>
+        <a href="#">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="#">Join</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main class="home-page">
+      <section class="hero-section" aria-labelledby="hero-heading">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80"
+          alt="Downtown skyline and community gathering space in Nampa"
+        >
+        <div class="hero-content">
+          <p class="eyebrow">Welcome to Nampa</p>
+          <h1 id="hero-heading">Build your business with a stronger local network.</h1>
+          <p>
+            From startup support to community partnerships, the Nampa Valley Chamber helps
+            businesses grow, connect, and thrive.
+          </p>
+          <a class="cta-button" href="#">Join the Chamber</a>
+        </div>
+      </section>
+
+      <section class="info-grid">
+        <article class="panel current-events" aria-labelledby="events-heading">
+          <h2 id="events-heading">Current Events</h2>
+          <ul>
+            <li>
+              <strong>City Business Mixer</strong>
+              <span>Thursday • 5:30 PM • Downtown Nampa</span>
+            </li>
+            <li>
+              <strong>Small Business Resource Fair</strong>
+              <span>Saturday • 9:00 AM • Valley Events Center</span>
+            </li>
+            <li>
+              <strong>Community Growth Roundtable</strong>
+              <span>Next Tuesday • 12:00 PM • Chamber Offices</span>
+            </li>
+          </ul>
+        </article>
+
+        <aside class="panel weather-panel" aria-live="polite">
+          <h2>Weather</h2>
+          <div id="weather-summary" class="weather-summary">
+            <p>Loading weather...</p>
+          </div>
+          <div id="forecast" class="forecast" aria-label="Three day forecast"></div>
+        </aside>
+      </section>
+
+      <section class="panel spotlight-panel" aria-labelledby="spotlights-heading">
+        <div class="section-header">
+          <p class="eyebrow">Member Highlights</p>
+          <h2 id="spotlights-heading">Spotlight Members</h2>
+        </div>
+        <div id="spotlights" class="spotlight-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-contact">
+        <div>
+          <h2>Nampa Valley Chamber</h2>
+          <p>315 Main Street, Nampa, ID 83651</p>
+          <p><a href="tel:2085550171">(208) 555-0171</a></p>
+          <p><a href="mailto:info@nampavalleychamber.org">info@nampavalleychamber.org</a></p>
+        </div>
+
+        <div>
+          <p><strong>WDD 231</strong></p>
+          <p>Lawren Talamaivao</p>
+          <p id="lastModified" class="last-modified">Last modified: --</p>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <p>© <span id="currentYear"></span> Nampa Valley Chamber</p>
+      </div>
+    </footer>
+  </body>
+</html>

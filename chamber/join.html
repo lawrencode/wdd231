@@ -27,220 +27,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
-    <style>
-      .join-intro {
-        margin-bottom: 1.5rem;
-      }
-
-      .join-grid {
-        display: grid;
-        gap: 1.25rem;
-      }
-
-      .membership-grid {
-        display: grid;
-        gap: 1rem;
-      }
-
-      .membership-tier {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        padding: 1.25rem;
-        border: 1px solid var(--border);
-        border-radius: 20px;
-        background: rgba(255, 255, 255, 0.95);
-        box-shadow: var(--shadow);
-      }
-
-      .tier-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 0.75rem;
-      }
-
-      .tier-header h3 {
-        margin: 0;
-        color: var(--primary-dark);
-        font-size: 1.4rem;
-      }
-
-      .tier-price {
-        color: var(--accent);
-        font-size: 1.7rem;
-        font-weight: 800;
-        line-height: 1;
-      }
-
-      .membership-tier p,
-      .membership-tier li,
-      .membership-tier strong {
-        color: var(--text);
-      }
-
-      .membership-tier ul {
-        margin: 0;
-        padding-left: 1.1rem;
-        display: grid;
-        gap: 0.45rem;
-      }
-
-      .membership-info-link {
-        align-self: flex-start;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.6rem 0.9rem;
-        border-radius: 999px;
-        background: rgba(20, 61, 89, 0.08);
-        color: var(--primary-dark);
-        font-weight: 700;
-      }
-
-      .join-form-panel {
-        padding: 1.25rem;
-        border-radius: 22px;
-        border: 1px solid var(--border);
-        background: rgba(255, 255, 255, 0.9);
-        box-shadow: var(--shadow);
-      }
-
-      .join-form-panel h2 {
-        margin-top: 0;
-        margin-bottom: 1rem;
-        color: var(--primary-dark);
-      }
-
-      .form-grid {
-        display: grid;
-        gap: 1rem;
-      }
-
-      .field-group {
-        display: grid;
-        gap: 0.45rem;
-      }
-
-      .field-group label {
-        color: var(--primary-dark);
-        font-weight: 700;
-      }
-
-      .field-group input,
-      .field-group select,
-      .field-group textarea {
-        width: 100%;
-        padding: 0.8rem 0.9rem;
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        background: #fff;
-        color: var(--text);
-        font: inherit;
-      }
-
-      .field-group textarea {
-        min-height: 120px;
-        resize: vertical;
-      }
-
-      .submit-row {
-        display: flex;
-        justify-content: flex-start;
-        margin-top: 0.5rem;
-      }
-
-      .submit-button {
-        border: none;
-        border-radius: 999px;
-        background: var(--accent);
-        color: #fff;
-        font: inherit;
-        font-weight: 800;
-        padding: 0.85rem 1.5rem;
-        cursor: pointer;
-        box-shadow: 0 8px 20px rgba(217, 119, 61, 0.34);
-      }
-
-      .membership-modal {
-        position: fixed;
-        inset: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        background: rgba(9, 25, 38, 0.7);
-        z-index: 50;
-      }
-
-      .membership-modal[aria-hidden="true"] {
-        display: none;
-      }
-
-      .membership-modal-card {
-        width: min(560px, 100%);
-        background: #fff;
-        border-radius: 22px;
-        border: 1px solid var(--border);
-        box-shadow: var(--shadow);
-        padding: 1.3rem;
-      }
-
-      .membership-modal-header {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 1rem;
-        margin-bottom: 0.8rem;
-      }
-
-      .membership-modal-header h3 {
-        margin: 0;
-        color: var(--primary-dark);
-      }
-
-      .modal-close {
-        border: none;
-        background: rgba(20, 61, 89, 0.08);
-        color: var(--primary-dark);
-        border-radius: 999px;
-        width: 2.2rem;
-        height: 2.2rem;
-        font-size: 1.2rem;
-        cursor: pointer;
-      }
-
-      .membership-modal-card ul {
-        margin: 0.8rem 0 1rem 1.2rem;
-        display: grid;
-        gap: 0.4rem;
-        color: var(--text);
-      }
-
-      .membership-modal-card p {
-        margin: 0;
-        color: var(--muted);
-      }
-
-      @media (min-width: 700px) {
-        .join-grid {
-          grid-template-columns: 1.2fr 1fr;
-          align-items: start;
-        }
-
-        .membership-grid {
-          grid-template-columns: repeat(3, minmax(0, 1fr));
-        }
-
-        .form-grid {
-          grid-template-columns: repeat(2, minmax(0, 1fr));
-        }
-
-        .field-group.full-width {
-          grid-column: 1 / -1;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="styles/join.css">
     <script src="scripts/join.js" defer></script>
   </head>
   <body>
@@ -336,56 +123,113 @@
 
         <section class="join-form-panel" aria-labelledby="application-heading">
           <h2 id="application-heading">Membership Application</h2>
-          <form>
+          <form method="get" action="thankyou.html">
             <div class="form-grid">
               <div class="field-group">
                 <label for="first-name">First Name</label>
-                <input id="first-name" name="first-name" type="text" placeholder="Your first name" required>
+                <input
+                  id="first-name"
+                  name="first-name"
+                  type="text"
+                  autocomplete="given-name"
+                  title="First Name"
+                  placeholder="Your first name"
+                  required
+                >
               </div>
 
               <div class="field-group">
                 <label for="last-name">Last Name</label>
-                <input id="last-name" name="last-name" type="text" placeholder="Your last name" required>
+                <input
+                  id="last-name"
+                  name="last-name"
+                  type="text"
+                  autocomplete="family-name"
+                  title="Last Name"
+                  placeholder="Your last name"
+                  required
+                >
               </div>
 
               <div class="field-group">
-                <label for="title">Title</label>
-                <input id="title" name="title" type="text" placeholder="Business title">
+                <label for="title">Organization Title</label>
+                <input
+                  id="title"
+                  name="title"
+                  type="text"
+                  autocomplete="organization-title"
+                  title="Organization Title"
+                  placeholder="Business title"
+                >
               </div>
 
               <div class="field-group">
-                <label for="business-name">Business Name</label>
-                <input id="business-name" name="business-name" type="text" placeholder="Company name" required>
+                <label for="business-name">Organization Name</label>
+                <input
+                  id="business-name"
+                  name="business-name"
+                  type="text"
+                  autocomplete="organization"
+                  title="Organization Name"
+                  placeholder="Company name"
+                  required
+                >
               </div>
 
               <div class="field-group">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="name@example.com" required>
+                <label for="email">Email Address</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  title="Email Address"
+                  placeholder="name@example.com"
+                  required
+                >
               </div>
 
               <div class="field-group">
-                <label for="phone">Phone</label>
-                <input id="phone" name="phone" type="tel" placeholder="(208) 555-0123">
+                <label for="phone">Mobile Phone</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  autocomplete="tel"
+                  title="Mobile Phone"
+                  placeholder="(208) 555-0123"
+                  required
+                >
               </div>
 
               <div class="field-group full-width">
                 <label for="membership-level">Membership Level</label>
-                <select id="membership-level" name="membership-level" required>
+                <select id="membership-level" name="membership-level" title="Membership Level" required>
                   <option value="">Select a level</option>
-                  <option>Bronze</option>
-                  <option>Silver</option>
-                  <option>Gold</option>
+                  <option value="np">NP</option>
+                  <option value="bronze">Bronze</option>
+                  <option value="silver">Silver</option>
+                  <option value="gold">Gold</option>
                 </select>
               </div>
 
               <div class="field-group full-width">
-                <label for="business-description">Business Description</label>
-                <textarea id="business-description" name="business-description" placeholder="Tell us a little about your business and goals."></textarea>
+                <label for="business-description">Organization Description</label>
+                <textarea
+                  id="business-description"
+                  name="business-description"
+                  title="Organization Description"
+                  placeholder="Tell us a little about your business and goals."
+                ></textarea>
               </div>
 
               <div class="field-group full-width">
-                <label for="timestamp">Application Timestamp</label>
-                <input id="timestamp" name="timestamp" type="datetime-local" readonly>
+                <input
+                  id="timestamp"
+                  name="timestamp"
+                  type="hidden"
+                  value=""
+                >
               </div>
             </div>
 

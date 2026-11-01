@@ -31,7 +31,7 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="brand" aria-label="Nampa Valley Chamber branding">
+      <div class="brand">
         <img src="images/favicon.svg" alt="Nampa Valley Chamber logo" class="brand-logo">
         <div class="brand-text">
           <span class="brand-name">Nampa Valley</span>
@@ -67,7 +67,7 @@
           <h1 id="directory-heading">Chamber Members</h1>
         </div>
 
-        <div class="view-controls" aria-label="View controls for directory list">
+        <div class="view-controls" role="group" aria-label="View controls for directory list">
           <button class="view-btn active" type="button" data-view="grid" aria-pressed="true">
             Grid View
           </button>
@@ -77,7 +77,8 @@
         </div>
       </section>
 
-      <section class="directory-panel">
+      <section class="directory-panel" aria-labelledby="directory-panel-heading">
+        <h2 id="directory-panel-heading" class="sr-only">Chamber directory listings</h2>
         <div id="memberList" class="member-grid" aria-live="polite"></div>
       </section>
     </main>

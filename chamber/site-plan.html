@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Site plan for the Nampa Valley Chamber website, including its purpose, audience scenarios, visual design, and home page wireframe planning."
+    >
+    <meta name="author" content="Lawren Talamaivao">
+    <title>Nampa Valley Chamber | Site Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --paper: #f7f1ea;
+        --surface: #ffffff;
+        --navy: #143d59;
+        --navy-dark: #0d2d43;
+        --orange: #d9773d;
+        --ink: #1d2a39;
+        --muted: #536777;
+        --line: #dfe7ef;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 1.5rem 1rem;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: "Open Sans", Arial, sans-serif;
+        line-height: 1.65;
+      }
+
+      main {
+        width: min(900px, 100%);
+        margin: 0 auto;
+      }
+
+      header {
+        margin-bottom: 1.5rem;
+        padding: 2rem clamp(1.25rem, 5vw, 3rem);
+        border-radius: 1rem;
+        background: var(--navy-dark);
+        color: var(--surface);
+      }
+
+      header p {
+        max-width: 62ch;
+        margin-bottom: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", Georgia, serif;
+        line-height: 1.2;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 3.25rem);
+      }
+
+      h2 {
+        margin-top: 0;
+        color: var(--navy-dark);
+      }
+
+      h3 {
+        color: var(--navy);
+      }
+
+      section {
+        margin: 1rem 0;
+        padding: clamp(1.1rem, 4vw, 2rem);
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        background: var(--surface);
+      }
+
+      a {
+        color: var(--navy);
+        text-decoration-thickness: 0.1em;
+        text-underline-offset: 0.15em;
+      }
+
+      a:hover,
+      a:focus-visible {
+        color: var(--navy-dark);
+      }
+
+      .eyebrow,
+      dt {
+        color: var(--orange);
+        font-weight: 700;
+      }
+
+      .eyebrow {
+        margin: 0 0 0.5rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .swatches {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+        padding: 0;
+        list-style: none;
+      }
+
+      .swatch {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 0.75rem;
+      }
+
+      .swatch-color {
+        min-height: 3.25rem;
+      }
+
+      .swatch p {
+        margin: 0;
+        padding: 0.75rem;
+      }
+
+      .wireframe-note {
+        padding: 1rem;
+        border-left: 4px solid var(--orange);
+        background: var(--paper);
+      }
+
+      footer {
+        padding: 1.5rem 0 0.5rem;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      @media (min-width: 700px) {
+        body {
+          padding: 2.5rem 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">Website project plan</p>
+        <h1>Nampa Valley Chamber</h1>
+        <p>A planning document for a welcoming online hub connecting Nampa-area businesses and community members.</p>
+      </header>
+
+      <section aria-labelledby="site-name-heading">
+        <h2 id="site-name-heading">Site Name</h2>
+        <p><strong>Nampa Valley Chamber</strong></p>
+        <p>The name identifies the organization and the community it serves. “Nampa Valley” gives the chamber a clear local identity, while “Chamber” signals its role in supporting and connecting businesses.</p>
+        <p><strong>Optional domain:</strong> nampavalleychamber.org</p>
+      </section>
+
+      <section aria-labelledby="purpose-heading">
+        <h2 id="purpose-heading">Site Purpose</h2>
+        <p>The website helps businesses and residents discover local organizations, chamber membership opportunities, community events, and business resources. It will introduce the chamber, highlight member businesses, share timely local information, and make it easy to contact the organization or learn how to join.</p>
+      </section>
+
+      <section aria-labelledby="scenarios-heading">
+        <h2 id="scenarios-heading">Audience Scenarios</h2>
+        <p>These questions represent common needs of prospective members, local business owners, and people looking to connect with the Nampa community.</p>
+        <ul>
+          <li>How can I find local businesses that are members of the Nampa Valley Chamber?</li>
+          <li>What events are coming up, and where and when are they being held?</li>
+          <li>What are the benefits of joining the chamber, and how do I apply?</li>
+          <li>How can I contact the chamber about a business question or partnership?</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="colors-heading">
+        <h2 id="colors-heading">Color Scheme</h2>
+        <p>The plan uses a warm, community-oriented palette. Navy communicates trust and professionalism; warm orange adds energy and draws attention to calls to action. Light backgrounds keep the content readable and open.</p>
+        <ul class="swatches">
+          <li class="swatch">
+            <div class="swatch-color" style="background: #143d59" aria-hidden="true"></div>
+            <p><strong>Nampa navy — #143D59</strong><br>Navigation, section headings, and primary links.</p>
+          </li>
+          <li class="swatch">
+            <div class="swatch-color" style="background: #0d2d43" aria-hidden="true"></div>
+            <p><strong>Deep navy — #0D2D43</strong><br>Hero backgrounds and high-emphasis text.</p>
+          </li>
+          <li class="swatch">
+            <div class="swatch-color" style="background: #d9773d" aria-hidden="true"></div>
+            <p><strong>Warm orange — #D9773D</strong><br>Accent labels, highlights, and calls to action.</p>
+          </li>
+          <li class="swatch">
+            <div class="swatch-color" style="background: #f7f1ea" aria-hidden="true"></div>
+            <p><strong>Warm ivory — #F7F1EA</strong><br>Page background and soft contrast areas.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="typography-heading">
+        <h2 id="typography-heading">Typography</h2>
+        <dl>
+          <dt>Playfair Display</dt>
+          <dd>Used for page titles and major section headings to add a distinctive, welcoming editorial feel. Example: <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.35rem; color: #0d2d43">Build stronger local connections.</span></dd>
+          <dt>Open Sans</dt>
+          <dd>Used for body copy, navigation, labels, and buttons because it is clear and readable across screen sizes. Example: <span style="font-family: 'Open Sans', Arial, sans-serif">Discover events, resources, and businesses in the Nampa Valley.</span></dd>
+        </dl>
+      </section>
+
+      <section aria-labelledby="wireframe-heading">
+        <h2 id="wireframe-heading">Home Page Wireframe</h2>
+        <p>The home page layout is planned for both a narrow mobile viewport and a larger desktop/tablet viewport. The structure includes a header with brand and navigation, a hero introduction and join button, event and weather information, member spotlights, and a contact footer.</p>
+        <div class="wireframe-note">
+          <p><strong>Required sketch:</strong> Add your own black-and-white hand-drawn or manually created home-page wireframes here: one small/mobile viewport and one large desktop/tablet viewport. Photograph or scan the sketches and insert the images before submitting. The wireframe illustrations are intentionally left for you to create as required by the assignment.</p>
+        </div>
+      </section>
+
+      <footer>
+        <p>Site plan for the Nampa Valley Chamber project · WDD 231</p>
+      </footer>
+    </main>
+  </body>
+</html>

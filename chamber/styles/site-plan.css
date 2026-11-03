@@ -1,0 +1,281 @@
+/* Site plan page styles */
+:root {
+  color-scheme: light;
+  --navy: #143d59;
+  --deep-navy: #0d2d43;
+  --orange: #d9773d;
+  --ivory: #f7f1ea;
+  --white: #ffffff;
+  --ink: #243746;
+  --muted: #526371;
+  --border: #d8e0e5;
+  --shadow: 0 0.5rem 1.5rem rgb(13 45 67 / 10%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--navy);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
+}
+
+.site-header {
+  align-items: center;
+  background: var(--white);
+  box-shadow: 0 2px 10px rgb(13 45 67 / 8%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem max(1.25rem, calc((100% - 72rem) / 2));
+  position: relative;
+  z-index: 1;
+}
+
+.brand {
+  align-items: center;
+  color: var(--deep-navy);
+  display: flex;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.brand-logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+.brand-text {
+  display: grid;
+  line-height: 1.2;
+}
+
+.brand-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.brand-subtitle {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.main-nav {
+  align-items: center;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.main-nav a {
+  border-radius: 0.3rem;
+  color: var(--deep-navy);
+  font-weight: 700;
+  padding: 0.6rem 0.8rem;
+  text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  background: var(--navy);
+  color: var(--white);
+}
+
+.nav-toggle {
+  background: transparent;
+  border: 2px solid var(--navy);
+  border-radius: 0.35rem;
+  cursor: pointer;
+  display: none;
+  padding: 0.45rem;
+}
+
+.nav-toggle span {
+  background: var(--navy);
+  display: block;
+  height: 2px;
+  margin: 4px 0;
+  width: 1.4rem;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 72rem;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+.page-heading {
+  background: var(--deep-navy);
+  border-radius: 0.8rem;
+  box-shadow: var(--shadow);
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+}
+
+.page-heading h1,
+section h2 {
+  font-family: "Playfair Display", serif;
+  line-height: 1.2;
+}
+
+.page-heading h1 {
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  margin: 0.25rem 0 0.75rem;
+}
+
+.page-heading > p:last-child {
+  margin-bottom: 0;
+  max-width: 48rem;
+}
+
+.eyebrow {
+  color: #ffd2ad;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+main > section {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 0.7rem;
+  box-shadow: var(--shadow);
+  margin-top: 1.25rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+section h2 {
+  color: var(--navy);
+  font-size: 1.7rem;
+  margin: 0 0 0.8rem;
+}
+
+section p:last-child {
+  margin-bottom: 0;
+}
+
+.swatches {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0;
+}
+
+.swatch {
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.swatch-color {
+  height: 4rem;
+}
+
+.swatch-navy {
+  background: #143d59;
+}
+
+.swatch-deep-navy {
+  background: #0d2d43;
+}
+
+.swatch-orange {
+  background: #d9773d;
+}
+
+.swatch-ivory {
+  background: #f7f1ea;
+}
+
+.swatch p {
+  margin: 0;
+  padding: 0.8rem;
+}
+
+dt {
+  color: var(--navy);
+  font-weight: 700;
+  margin-top: 0.8rem;
+}
+
+dd {
+  margin-left: 0;
+}
+
+.font-example {
+  color: var(--deep-navy);
+  display: inline-block;
+  font-size: 1.1rem;
+  margin-top: 0.25rem;
+}
+
+.font-display {
+  font-family: "Playfair Display", serif;
+}
+
+.font-open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.wireframe-note {
+  background: var(--ivory);
+  border-left: 4px solid var(--orange);
+  margin-top: 1rem;
+  padding: 0.25rem 1rem;
+}
+
+footer {
+  background: var(--deep-navy);
+  color: var(--white);
+  padding: 1.25rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 0.25rem;
+}
+
+@media (max-width: 48rem) {
+  .site-header {
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    align-items: stretch;
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    padding-top: 0.75rem;
+  }
+
+  .main-nav.is-open {
+    display: flex;
+  }
+
+  .main-nav a {
+    text-align: center;
+  }
+}

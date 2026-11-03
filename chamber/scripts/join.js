@@ -1,56 +1,37 @@
-const timestampInput = document.getElementById('timestamp');
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.main-nav');
 
-if (timestampInput) {
-  const now = new Date();
-  timestampInput.value = now.toISOString();
+if (navToggle && nav) {
+  navToggle.addEventListener('click', () => {
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', String(!expanded));
+    nav.classList.toggle('open');
+  });
 }
 
-const modalButtons = document.querySelectorAll('.membership-info-link');
-const closeButtons = document.querySelectorAll('.modal-close');
-const modals = document.querySelectorAll('.membership-modal');
+const timestampInput = document.getElementById('timestamp');
+if (timestampInput) {
+  timestampInput.value = new Date().toISOString();
+}
 
-const closeModal = (modal) => {
-  if (!modal) return;
-  modal.setAttribute('aria-hidden', 'true');
-};
+const currentYear = document.getElementById('currentYear');
+if (currentYear) currentYear.textContent = new Date().getFullYear();
 
-const openModal = (modalId) => {
-  const modal = document.getElementById(modalId);
-  if (!modal) return;
-  modal.setAttribute('aria-hidden', 'false');
-  const closeButton = modal.querySelector('.modal-close');
-  if (closeButton) {
-    closeButton.focus();
-  }
-};
+const lastModified = document.getElementById('lastModified');
+if (lastModified) lastModified.textContent = `Last modified: ${document.lastModified}`;
 
-modalButtons.forEach((button) => {
-  button.addEventListener('click', (event) => {
+document.querySelectorAll('.membership-info-link').forEach((link) => {
+  link.addEventListener('click', (event) => {
+    const modal = document.querySelector(link.getAttribute('href'));
+    if (!(modal instanceof HTMLDialogElement)) return;
     event.preventDefault();
-    const target = button.getAttribute('href');
-    if (target && target.startsWith('#')) {
-      openModal(target.slice(1));
-    }
+    modal.showModal();
   });
 });
 
-closeButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.membership-modal');
-    closeModal(modal);
-  });
-});
-
-modals.forEach((modal) => {
+document.querySelectorAll('.membership-modal').forEach((modal) => {
+  modal.querySelector('.modal-close')?.addEventListener('click', () => modal.close());
   modal.addEventListener('click', (event) => {
-    if (event.target === modal) {
-      closeModal(modal);
-    }
-  });
-
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') {
-      closeModal(modal);
-    }
+    if (event.target === modal) modal.close();
   });
 });

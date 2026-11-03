@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Nampa, Idaho's parks, history, wildlife, and community destinations with the Nampa Valley Chamber of Commerce.">
+    <meta name="author" content="Lawren Talamaivao">
+    <meta property="og:title" content="Discover Nampa | Nampa Valley Chamber">
+    <meta property="og:description" content="Explore the places, history, and outdoor attractions that make Nampa a great place to live, visit, and do business.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://lawrencode.github.io/wdd231/chamber/images/social-preview.svg">
+    <meta property="og:url" content="https://lawrencode.github.io/wdd231/chamber/discover.html">
+    <title>Discover Nampa | Nampa Valley Chamber</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <script type="module" src="scripts/discover.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Nampa Valley Chamber home">
+        <img src="images/favicon.svg" alt="" class="brand-logo">
+        <span class="brand-text">
+          <span class="brand-name">Nampa Valley</span>
+          <small class="brand-subtitle">Chamber of Commerce</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="discover.html" class="active" aria-current="page">Discover</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="discover-page">
+      <section class="discover-intro" aria-labelledby="discover-heading">
+        <p class="eyebrow">Make yourself at home</p>
+        <h1 id="discover-heading">Discover Nampa</h1>
+        <p>From a thriving downtown to wildlife-rich wetlands, Nampa brings together Idaho history, outdoor adventure, and a welcoming business community.</p>
+      </section>
+
+      <aside class="visit-message" id="visit-message" aria-live="polite" aria-atomic="true"></aside>
+
+      <section class="places-section" aria-labelledby="places-heading">
+        <div class="places-heading">
+          <div>
+            <p class="eyebrow">Local places, lasting impressions</p>
+            <h2 id="places-heading">Eight Nampa-area favorites</h2>
+          </div>
+          <p>Explore the destinations and community assets that make the Nampa Valley a special place to work, visit, and build a business.</p>
+        </div>
+        <div class="places-grid" id="places-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-contact">
+        <div>
+          <h2>Nampa Valley Chamber</h2>
+          <p>315 Main Street, Nampa, ID 83651</p>
+          <p><a href="tel:2085550171">(208) 555-0171</a></p>
+          <p><a href="mailto:info@nampavalleychamber.org">info@nampavalleychamber.org</a></p>
+        </div>
+        <div>
+          <p><strong>WDD 231</strong></p>
+          <p>Lawren Talamaivao</p>
+          <p id="lastModified" class="last-modified">Last modified: --</p>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <p>© <span id="currentYear"></span> Nampa Valley Chamber</p>
+      </div>
+    </footer>
+  </body>
+</html>

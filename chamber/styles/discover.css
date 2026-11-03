@@ -1,0 +1,252 @@
+:root {
+  --discover-ink: #143d59;
+  --discover-muted: #536777;
+  --discover-line: #dfe7ef;
+  --discover-accent: #d9773d;
+}
+
+.discover-page {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.discover-intro {
+  padding: clamp(1.25rem, 4vw, 2.5rem);
+  border-radius: 22px;
+  background: linear-gradient(120deg, #143d59, #28627b);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.discover-intro .eyebrow {
+  margin: 0 0 0.35rem;
+  color: #ffd2ad;
+}
+
+.discover-intro h1 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+}
+
+.discover-intro > p:last-child {
+  max-width: 62ch;
+  margin: 0.8rem 0 0;
+  color: #f2f7fa;
+}
+
+.visit-message {
+  padding: 0.9rem 1.15rem;
+  border-left: 5px solid var(--discover-accent);
+  border-radius: 0 12px 12px 0;
+  background: #fff;
+  color: var(--discover-ink);
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(19, 35, 50, 0.06);
+}
+
+.places-section {
+  display: grid;
+  gap: 1rem;
+}
+
+.places-heading {
+  display: grid;
+  gap: 0.5rem;
+  align-items: end;
+  margin-bottom: 0.25rem;
+}
+
+.places-heading .eyebrow {
+  margin: 0 0 0.25rem;
+}
+
+.places-heading h2 {
+  margin: 0;
+  color: var(--discover-ink);
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+}
+
+.places-heading > p {
+  max-width: 54ch;
+  margin: 0;
+  color: var(--discover-muted);
+}
+
+.places-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "museum"
+    "refuge"
+    "lake"
+    "depot"
+    "venue"
+    "park"
+    "downtown"
+    "university";
+  gap: 1rem;
+}
+
+.place-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--discover-line);
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(19, 35, 50, 0.06);
+}
+
+.place-card h2 {
+  margin: 0 0 0.75rem;
+  color: var(--discover-ink);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.3rem;
+  line-height: 1.25;
+}
+
+.place-card figure {
+  overflow: hidden;
+  margin: 0 0 0.8rem;
+  border-radius: 12px;
+  background: #edf2f8;
+}
+
+.place-card figure img {
+  display: block;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.place-card address {
+  margin-bottom: 0.5rem;
+  color: var(--discover-muted);
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.place-description,
+.place-detail {
+  margin: 0 0 0.9rem;
+  color: #334858;
+}
+
+.place-detail {
+  padding: 0.7rem;
+  border-radius: 10px;
+  background: #edf2f8;
+  font-size: 0.92rem;
+}
+
+.place-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: auto;
+}
+
+.learn-more,
+.map-link {
+  display: inline-flex;
+  min-height: 2.65rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--discover-ink);
+  border-radius: 999px;
+  background: var(--discover-ink);
+  color: #fff;
+  font: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.map-link {
+  background: #fff;
+  color: var(--discover-ink);
+}
+
+.learn-more:hover,
+.learn-more:focus-visible {
+  background: #0d2d43;
+}
+
+.map-link:hover,
+.map-link:focus-visible {
+  background: #edf2f8;
+}
+
+.place-1 { grid-area: museum; }
+.place-2 { grid-area: refuge; }
+.place-3 { grid-area: lake; }
+.place-4 { grid-area: depot; }
+.place-5 { grid-area: venue; }
+.place-6 { grid-area: park; }
+.place-7 { grid-area: downtown; }
+.place-8 { grid-area: university; }
+
+@media (min-width: 641px) {
+  .places-heading {
+    grid-template-columns: 1.2fr 1fr;
+  }
+
+  .places-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "museum museum"
+      "refuge lake"
+      "depot venue"
+      "park park"
+      "downtown university";
+    gap: 1.2rem;
+  }
+
+  .place-card {
+    padding: 1.15rem;
+  }
+
+  .place-card figure img {
+    height: 200px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .places-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas:
+      "museum museum refuge lake"
+      "depot venue venue park"
+      "downtown downtown university university";
+    gap: 1.25rem;
+  }
+
+  .place-1 figure img,
+  .place-5 figure img,
+  .place-7 figure img,
+  .place-8 figure img {
+    height: 220px;
+  }
+}
+
+@media (min-width: 641px) and (hover: hover) and (pointer: fine) {
+  .place-card figure img {
+    transition: filter 180ms ease, transform 180ms ease;
+  }
+
+  .place-card figure:hover img {
+    filter: saturate(1.18) brightness(0.9);
+    transform: scale(1.035);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .place-card figure img {
+    transition: none;
+  }
+}

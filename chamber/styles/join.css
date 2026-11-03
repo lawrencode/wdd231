@@ -1,0 +1,230 @@
+.join-intro {
+  margin-bottom: 1.5rem;
+}
+
+.join-layout {
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.join-form-panel,
+.membership-panel {
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow);
+}
+
+.join-form-panel h2,
+.membership-panel h2 {
+  margin: 0 0 0.45rem;
+  color: var(--primary-dark);
+}
+
+.form-intro,
+.membership-intro {
+  margin: 0 0 1.15rem;
+  color: var(--muted);
+}
+
+.form-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.field-group {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.field-group label {
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+.field-group input,
+.field-group select,
+.field-group textarea {
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid #9aabba;
+  border-radius: 12px;
+  background: #fff;
+  color: var(--text);
+  font: inherit;
+}
+
+.field-group input:focus-visible,
+.field-group select:focus-visible,
+.field-group textarea:focus-visible,
+.membership-info-link:focus-visible,
+.submit-button:focus-visible,
+.modal-close:focus-visible {
+  outline: 3px solid #b6531e;
+  outline-offset: 3px;
+}
+
+.field-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.field-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-hint {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.submit-row {
+  margin-top: 1.1rem;
+}
+
+.submit-button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.85rem 1.5rem;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(217, 119, 61, 0.3);
+}
+
+.membership-grid {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.membership-card {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-left: 5px solid var(--accent);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(19, 35, 50, 0.06);
+  animation: card-arrive 0.65s ease-out both;
+}
+
+.membership-card:nth-child(2) {
+  animation-delay: 0.12s;
+  border-left-color: #9a6b3f;
+}
+
+.membership-card:nth-child(3) {
+  animation-delay: 0.24s;
+  border-left-color: #74899d;
+}
+
+.membership-card:nth-child(4) {
+  animation-delay: 0.36s;
+  border-left-color: #b68b30;
+}
+
+.membership-card h3 {
+  margin: 0;
+  color: var(--primary-dark);
+  font-size: 1.2rem;
+}
+
+.tier-price {
+  margin: 0.15rem 0 0.5rem;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.membership-card p {
+  margin: 0 0 0.7rem;
+  color: var(--muted);
+}
+
+.membership-info-link {
+  display: inline-flex;
+  padding: 0.55rem 0.85rem;
+  border-radius: 999px;
+  background: #e8eef3;
+  color: var(--primary-dark);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+@keyframes card-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+dialog.membership-modal {
+  width: min(560px, calc(100% - 2rem));
+  max-width: none;
+  max-height: min(85vh, 640px);
+  padding: 1.35rem;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  color: var(--text);
+  box-shadow: 0 20px 60px rgba(9, 25, 38, 0.3);
+}
+
+dialog.membership-modal::backdrop {
+  background: rgba(9, 25, 38, 0.72);
+}
+
+.membership-modal h2 {
+  margin: 0 0 0.5rem;
+  color: var(--primary-dark);
+}
+
+.membership-modal p {
+  color: var(--muted);
+}
+
+.membership-modal ul {
+  display: grid;
+  gap: 0.45rem;
+  padding-left: 1.2rem;
+}
+
+.modal-close {
+  float: right;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 0;
+  border-radius: 50%;
+  background: #e8eef3;
+  color: var(--primary-dark);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  .join-layout {
+    grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto;
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+  }
+}

@@ -1,0 +1,1 @@
+This temporary update block is intentionally separate. To inspect the CSS fixes, search for ".hero-content" and ".cta-button" in chamber/styles/small.css.

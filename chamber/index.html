@@ -52,11 +52,11 @@
       </button>
 
       <nav id="primary-nav" class="main-nav" aria-label="Main navigation">
-        <a href="index.html" class="active">Home</a>
-        <a href="#">Discover</a>
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="discover.html">Discover</a>
         <a href="directory.html">Directory</a>
-        <a href="#">Join</a>
-        <a href="#">Contact</a>
+        <a href="join.html">Join</a>
+        <a href="mailto:info@nampavalleychamber.org">Contact</a>
       </nav>
     </header>
 
@@ -64,8 +64,9 @@
       <section class="hero-section" aria-labelledby="hero-heading">
         <img
           class="hero-image"
-          src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80"
-          alt="Downtown skyline and community gathering space in Nampa"
+          src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1600&q=80"
+          alt="Local business owners meeting and building community connections"
+          fetchpriority="high"
         >
         <div class="hero-content">
           <p class="eyebrow">Welcome to Nampa</p>
@@ -74,7 +75,7 @@
             From startup support to community partnerships, the Nampa Valley Chamber helps
             businesses grow, connect, and thrive.
           </p>
-          <a class="cta-button" href="#">Join the Chamber</a>
+          <a class="cta-button" href="join.html">Join the Chamber</a>
         </div>
       </section>
 
@@ -97,12 +98,15 @@
           </ul>
         </article>
 
-        <aside class="panel weather-panel" aria-live="polite">
-          <h2>Weather</h2>
+        <aside class="panel weather-panel" aria-labelledby="weather-heading" aria-live="polite">
+          <h2 id="weather-heading">Nampa Weather</h2>
           <div id="weather-summary" class="weather-summary">
-            <p>Loading weather...</p>
+            <p>Loading current weather…</p>
           </div>
-          <div id="forecast" class="forecast"></div>
+          <h3 class="forecast-heading">3-Day Forecast</h3>
+          <div id="forecast" class="forecast">
+            <p>Forecast loading…</p>
+          </div>
         </aside>
       </div>
 
@@ -111,7 +115,9 @@
           <p class="eyebrow">Member Highlights</p>
           <h2 id="spotlights-heading">Spotlight Members</h2>
         </div>
-        <div id="spotlights" class="spotlight-grid"></div>
+        <div id="spotlights" class="spotlight-grid" aria-live="polite">
+          <p>Loading member spotlights…</p>
+        </div>
       </section>
     </main>
 

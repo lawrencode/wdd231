@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
   <title id="title">Nampa Valley Chamber social preview</title>
-  <desc id="desc">A chamber banner with a mountain skyline and business directory messaging.</desc>
+  <desc id="desc">A welcoming Nampa Valley Chamber banner for local businesses and community members.</desc>
   <defs>
     <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0%" stop-color="#143d59"/>
@@ -19,5 +19,5 @@
   <path d="M120 195 L150 130 L205 178 L281 92 L352 195 Z" fill="#ffffff" opacity="0.9"/>
   <text x="120" y="365" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="72" font-weight="800">Nampa Valley</text>
   <text x="120" y="435" fill="#f7d2a6" font-family="Segoe UI, Arial, sans-serif" font-size="38" font-weight="600">Chamber of Commerce</text>
-  <text x="120" y="505" fill="#ebf3ff" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="500">Member Directory</text>
+  <text x="120" y="505" fill="#ebf3ff" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="500">Grow. Connect. Thrive.</text>
 </svg>
